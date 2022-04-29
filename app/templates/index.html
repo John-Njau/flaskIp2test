@@ -1,0 +1,12 @@
+{% extends "base.html"%}
+{% block body %}
+<div>
+    {{name}}
+</div>
+<div>
+    {% for description in news_outlet%}
+    <h1>News description</h1>
+    <p>{{description}}</p>
+    {% endfor%}
+</div>
+{% endblock %}
